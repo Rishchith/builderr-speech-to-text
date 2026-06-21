@@ -1,5 +1,9 @@
-# Local ASR engine for the baseline / your submission (all local, no cloud at scoring).
-faster-whisper>=1.0        # or whisper.cpp bindings, parakeet (nemo/onnx), qwen3-asr via transformers
-# Corpus audio fetch (used by scripts/fetch_audio.py on the Action, not at scoring time):
-datasets>=2.18
-soundfile>=0.12
+# Core ASR engine — local, offline, MIT licensed
+# Weights: openai/whisper (MIT) — downloaded once, cached locally
+faster-whisper>=1.0.3
+
+# Audio I/O
+soundfile>=0.12.1
+
+# Numpy (required by faster-whisper PCM path)
+numpy>=1.24.0
