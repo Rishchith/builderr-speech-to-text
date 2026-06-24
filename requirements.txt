@@ -1,8 +1,13 @@
-# Core ASR — MIT licensed, runs fully offline
+# Core ASR — MIT licensed, fully offline
 faster-whisper>=1.0.3
-
-# Required by faster-whisper PCM numpy path
+ 
+# MLX Whisper — M1/M2 Neural Engine backend (10x faster than CPU on Mac)
+# Falls back gracefully if not on Apple Silicon
+mlx-whisper>=0.3.0
+ 
+# Required by faster-whisper and mlx-whisper PCM path
 numpy>=1.24.0
-
+ 
 # Audio file I/O
 soundfile>=0.12.1
+ 
