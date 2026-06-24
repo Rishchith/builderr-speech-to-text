@@ -1,9 +1,8 @@
-# Core ASR engine — local, offline, MIT licensed
-# Weights: openai/whisper (MIT) — downloaded once, cached locally
+# Core ASR — MIT licensed, runs fully offline
 faster-whisper>=1.0.3
 
-# Audio I/O
-soundfile>=0.12.1
-
-# Numpy (required by faster-whisper PCM path)
+# Required by faster-whisper PCM numpy path
 numpy>=1.24.0
+
+# Audio file I/O
+soundfile>=0.12.1
